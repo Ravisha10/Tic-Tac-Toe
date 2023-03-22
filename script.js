@@ -1,4 +1,5 @@
 //selecting all required elements
+
 const selectBox = document.querySelector(".select-box"),
 selectBtnX = selectBox.querySelector(".options .playerX"),
 selectBtnO = selectBox.querySelector(".options .playerO"),
@@ -51,7 +52,6 @@ function clickedBox(element){
         bot(runBot); //calling bot function
     }, randomTimeDelay); //passing random delay value
 }
-
 // bot auto select function
 function bot(){
     let array = []; //creating empty array...we'll store unclicked boxes index
@@ -81,7 +81,6 @@ function bot(){
         playerSign = "X"; //if player has chosen X then bot will be O right then we change the playerSign again to X so user will X because above we have changed the playerSign to O for bot
     }
 }
-
 function getIdVal(classname){
     return document.querySelector(".box" + classname).id; //return id value
 }
@@ -111,7 +110,6 @@ function selectWinner(){ //if the one of following winning combination match the
         }
     }
 }
-
 replayBtn.onclick = ()=>{
     window.location.reload(); //reload the current page on replay button click
 }
