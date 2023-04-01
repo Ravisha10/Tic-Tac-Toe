@@ -1,6 +1,7 @@
 //selecting all required elements
 
 //hi
+//commit
 
 const selectBox = document.querySelector(".select-box"),
 selectBtnX = selectBox.querySelector(".options .playerX"),
